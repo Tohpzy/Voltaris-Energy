@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voltaris Energy — Powering a Brighter Tomorrow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav-row">
+    <a href="#" class="logo" onclick="goTo('home');return false;">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="21" stroke="#F5B700" stroke-width="2.4"/>
+        <path d="M26 8 L15 27 H22 L20 40 L33 20 H26 L26 8Z" fill="#F5B700"/>
+      </svg>
+      <span class="logo-word">VOLTARIS <span>ENERGY</span></span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <button class="navlink active" data-page="home">Home</button>
+      <button class="navlink" data-page="about">About Us</button>
+      <button class="navlink" data-page="services">Services</button>
+      <button class="navlink" data-page="projects">Projects</button>
+      <button class="navlink" data-page="products">Products</button>
+      <button class="navlink" data-page="blog">Blog</button>
+      <button class="navlink" data-page="faqs">FAQs</button>
+      <button class="navlink" data-page="contact">Contact</button>
+    </nav>
+    <div class="nav-cta">
+      <button class="btn btn-primary" onclick="goTo('quote')">Get a Quote</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HOME ============ -->
+<main>
+<section class="page active" id="page-home">
+
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--yellow)">Solar &amp; Electrical Solutions · Nigeria</span>
+        <h1>Reliable solar &amp; electrical solutions for <em>homes and businesses.</em></h1>
+        <p class="lead">Powering Nigeria with clean, efficient, and dependable energy solutions — from solar installation to full electrical infrastructure and ongoing energy management.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="goTo('quote')">Get a Free Quote</button>
+          <button class="btn btn-ghost" onclick="goTo('contact')">Contact Us</button>
+        </div>
+        <div class="hero-stats">
+          <div><b>250+</b><span>Projects delivered</span></div>
+          <div><b>15 MW+</b><span>Solar capacity installed</span></div>
+          <div><b>24/7</b><span>Maintenance support</span></div>
+        </div>
+      </div>
+      <div class="sun-wrap">
+        <svg class="sun-svg" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="arcGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#F5B700"/>
+              <stop offset="100%" stop-color="#00A86B"/>
+            </linearGradient>
+          </defs>
+          <circle class="arc-track" cx="210" cy="220" r="140" stroke-width="10" fill="none"/>
+          <circle class="arc-progress" cx="210" cy="220" r="140" stroke-width="10" fill="none" transform="rotate(-90 210 220)"/>
+          <g class="sun-core">
+            <circle cx="210" cy="220" r="52" fill="#F5B700" opacity="0.15"/>
+            <circle cx="210" cy="220" r="34" fill="#F5B700"/>
+          </g>
+          <path class="bolt-path" d="M222 190 L196 226 L214 226 L200 258 L236 216 L216 216 L222 190Z" fill="#0A2540" stroke="#0A2540"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>End-to-end energy solutions, under one roof.</h2>
+        <p>From the first energy audit to years of maintenance after installation, Voltaris Energy handles every stage of your power journey.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M7 20h10M12 16v4"/></svg></div>
+          <h3>Solar Energy Solutions</h3>
+          <p>Solar panels, inverters, battery storage, street lighting and solar-powered water pumps engineered for Nigerian conditions.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M13 2 L4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+          <h3>Electrical Services</h3>
+          <p>Building and industrial wiring, generator integration, electrical maintenance and certified safety inspections.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Energy Solutions</h3>
+          <p>Energy audits, smart energy management, backup power design and independent power consultation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block navy">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" style="color:var(--yellow)">Why Voltaris</span>
+        <h2>Built for Nigeria's energy realities.</h2>
+      </div>
+      <div class="stat-strip">
+        <div><b>9+ yrs</b><span>Combined field experience</span></div>
+        <div><b>98%</b><span>Client satisfaction rate</span></div>
+        <div><b>36</b><span>States served</span></div>
+        <div><b>10-yr</b><span>Workmanship warranty</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h3 style="color:#fff;font-size:26px;margin-bottom:8px;">Ready for reliable power?</h3>
+          <p style="color:rgba(255,255,255,.75);max-width:480px;">Tell us about your home, office, or facility — we'll size the right solar and electrical solution and send you a free, no-obligation quote.</p>
+        </div>
+        <button class="btn btn-primary" onclick="goTo('quote')">Get a Free Quote</button>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="page" id="page-about">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Our Story</span>
+        <h2 style="font-size:34px;margin-bottom:18px;">Empowering homes and businesses with intelligent, sustainable energy.</h2>
+        <p style="color:var(--grey);">Voltaris Energy is a Nigerian renewable energy and electrical solutions company committed to delivering reliable, innovative, and sustainable power solutions for homes, businesses, and industries. We specialize in solar energy systems, electrical installations, energy management, and maintenance services designed to address Nigeria's growing energy challenges.</p>
+        <div class="quote-highlight">Powering a Brighter Tomorrow.</div>
+        <p style="color:var(--grey);">Our mission is to empower communities and businesses with clean, affordable, and dependable energy solutions while contributing to a greener, more sustainable future.</p>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:20px;">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2 L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3>Our Vision</h3>
+          <p>To become Nigeria's most trusted and innovative provider of renewable energy and electrical solutions, powering communities and businesses for a sustainable future.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div>
+          <h3>Our Mission</h3>
+          <p>To provide reliable, affordable, and energy-efficient solar and electrical solutions through innovation, quality service, and customer satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Five reasons clients stay with Voltaris.</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card"><h3 style="font-size:16px;">Certified Engineers</h3><p>Every installation is led by qualified electrical and solar engineers.</p></div>
+        <div class="card"><h3 style="font-size:16px;">Quality Components</h3><p>We source Tier-1 panels, inverters and batteries built for durability.</p></div>
+        <div class="card"><h3 style="font-size:16px;">Transparent Pricing</h3><p>Detailed quotes with no hidden costs, ever.</p></div>
+        <div class="card"><h3 style="font-size:16px;">Ongoing Support</h3><p>Maintenance plans and rapid-response support after installation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Core Values</span>
+        <h2>What guides every project.</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><h3 style="font-size:16px;">Excellence &amp; Integrity</h3><p>We hold every installation to the same rigorous standard, and do business honestly.</p></div>
+        <div class="card"><h3 style="font-size:16px;">Innovation &amp; Sustainability</h3><p>We bring forward-thinking energy technology that respects the environment.</p></div>
+        <div class="card"><h3 style="font-size:16px;">Safety &amp; Customer-Centricity</h3><p>Every job follows strict safety protocol, built around what the client actually needs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our Team</span>
+        <h2>The people behind the power.</h2>
+      </div>
+      <div class="grid grid-4">
+        <div><div class="team-avatar"><span>OA</span></div><h3 style="font-size:15.5px;">Lead Solar Engineer</h3><p style="color:var(--grey);font-size:13.5px;">System design &amp; installation</p></div>
+        <div><div class="team-avatar"><span>CE</span></div><h3 style="font-size:15.5px;">Chief Electrical Engineer</h3><p style="color:var(--grey);font-size:13.5px;">Wiring &amp; safety compliance</p></div>
+        <div><div class="team-avatar"><span>PM</span></div><h3 style="font-size:15.5px;">Projects Manager</h3><p style="color:var(--grey);font-size:13.5px;">Site delivery &amp; timelines</p></div>
+        <div><div class="team-avatar"><span>CS</span></div><h3 style="font-size:15.5px;">Client Success Lead</h3><p style="color:var(--grey);font-size:13.5px;">Support &amp; maintenance</p></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="page" id="page-services">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2>Solar, electrical, and energy management — done right.</h2>
+        <p>Every service is delivered by trained engineers, backed by a workmanship warranty.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M7 20h10M12 16v4"/></svg></div>
+          <h3>Solar Installation</h3>
+          <p>Full solar system design and installation, sized to your load.</p>
+          <ul>
+            <li>Solar panel installation</li>
+            <li>Inverter installation</li>
+            <li>Battery storage systems</li>
+            <li>Solar street lighting</li>
+            <li>Solar water pump installation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M13 2 L4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+          <h3>Electrical Installation</h3>
+          <p>Wiring and electrical infrastructure for every building type.</p>
+          <ul>
+            <li>Building electrical wiring</li>
+            <li>Industrial electrical installation</li>
+            <li>Generator integration</li>
+            <li>Electrical safety inspection</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 20l-1-4h2l-1 4Z"/><path d="M12 2v4M4.9 4.9l2.8 2.8M2 12h4M4.9 19.1l2.8-2.8M19.1 4.9l-2.8 2.8M22 12h-4M19.1 19.1l-2.8-2.8"/></svg></div>
+          <h3>Maintenance &amp; Support</h3>
+          <p>Ongoing care to keep systems running at peak performance.</p>
+          <ul>
+            <li>Scheduled preventive maintenance</li>
+            <li>Emergency repairs</li>
+            <li>System health checks</li>
+            <li>Spare parts &amp; replacements</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Energy Consultation</h3>
+          <p>Independent guidance on the right system for your budget and goals.</p>
+          <ul>
+            <li>Energy audits</li>
+            <li>Smart energy management</li>
+            <li>Backup power system design</li>
+            <li>Power consultation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="4" y="8" width="16" height="10" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></div>
+          <h3>Backup Power Systems</h3>
+          <p>Seamless battery and generator backup so power never stops.</p>
+          <ul>
+            <li>Automatic transfer switching</li>
+            <li>Hybrid solar-generator setups</li>
+            <li>Load prioritisation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <h3>Smart Energy Management</h3>
+          <p>Monitoring and controls that cut waste and reduce running costs.</p>
+          <ul>
+            <li>Real-time consumption monitoring</li>
+            <li>Remote system control</li>
+            <li>Usage reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="page" id="page-projects">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Projects</span>
+        <h2>Work across residential, commercial and industrial sites.</h2>
+      </div>
+      <div class="tabs">
+        <button class="tab active" data-tab="residential">Residential</button>
+        <button class="tab" data-tab="commercial">Commercial</button>
+        <button class="tab" data-tab="industrial">Industrial</button>
+      </div>
+
+      <div class="tabpanel grid grid-3 active" id="tab-residential">
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg></div><h3>Lekki Family Home — 5kW Hybrid</h3><p>Rooftop solar with battery backup for a duplex in Lekki, reducing generator use by 90%.</p></div>
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg></div><h3>Estate Development, Ibeju-Lekki</h3><p>Standardised solar wiring for 40 housing units, delivered on a phased rollout.</p></div>
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h14v-9"/></svg></div><h3>Landlord Retrofit, Abuja</h3><p>Full electrical rewiring and inverter upgrade for a multi-tenant property.</p></div>
+      </div>
+
+      <div class="tabpanel grid grid-3" id="tab-commercial">
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg></div><h3>Corporate Office, Victoria Island</h3><p>30kW solar-grid hybrid system cutting energy costs by 45%.</p></div>
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg></div><h3>Private School, Ogun State</h3><p>Solar street lighting and classroom electrical upgrade across 3 blocks.</p></div>
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg></div><h3>Hospital Backup Power, Port Harcourt</h3><p>Critical-load backup system ensuring zero downtime for essential equipment.</p></div>
+      </div>
+
+      <div class="tabpanel grid grid-3" id="tab-industrial">
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21V10l5 3V10l5 3V10l5 3v8Z"/></svg></div><h3>Manufacturing Plant, Ogun</h3><p>150kW industrial solar-diesel hybrid supply for a production facility.</p></div>
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21V10l5 3V10l5 3V10l5 3v8Z"/></svg></div><h3>Construction Site Power, Lagos</h3><p>Temporary and permanent electrical supply across a multi-year build.</p></div>
+        <div class="card"><div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 21V10l5 3V10l5 3V10l5 3v8Z"/></svg></div><h3>Agro-processing Facility, Kaduna</h3><p>Solar water pumping and cold-storage power for an agricultural business.</p></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="page" id="page-products">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Products</span>
+        <h2>Tier-1 equipment, sized and supplied for you.</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 10h18M9 4v16M15 4v16"/></svg></div>
+          <h3 style="font-size:16.5px;">Solar Panels</h3>
+          <p>Monocrystalline &amp; polycrystalline panels, 250W–600W, built for high-heat performance.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 12h8M12 8v8"/></svg></div>
+          <h3 style="font-size:16.5px;">Inverters</h3>
+          <p>Pure sine wave and hybrid inverters from 1kVA to 100kVA capacity.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="6" y="4" width="10" height="16" rx="2"/><path d="M10 2h2v2h-2z"/></svg></div>
+          <h3 style="font-size:16.5px;">Batteries</h3>
+          <p>Lithium (LiFePO4) and deep-cycle batteries built for long service life.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+          <h3 style="font-size:16.5px;">Accessories</h3>
+          <p>Mounting structures, cables, charge controllers and monitoring kits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="page" id="page-blog">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h2>Guides on solar, energy and electrical safety in Nigeria.</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+          <span class="blog-tag">Solar</span>
+          <h3 style="font-size:16px;">Benefits of Solar Energy in Nigeria</h3>
+          <p style="font-size:13.5px;">Why more homes and businesses are switching to solar power.</p>
+        </div>
+        <div class="card">
+          <div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1"/></svg></div>
+          <span class="blog-tag">Guide</span>
+          <h3 style="font-size:16px;">How to Size a Solar System</h3>
+          <p style="font-size:13.5px;">A practical framework for matching system size to your energy load.</p>
+        </div>
+        <div class="card">
+          <div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 20h16M6 20V10l6-6 6 6v10"/></svg></div>
+          <span class="blog-tag">Comparison</span>
+          <h3 style="font-size:16px;">Solar vs Generator Costs</h3>
+          <p style="font-size:13.5px;">Comparing long-term running costs of solar against petrol and diesel generators.</p>
+        </div>
+        <div class="card">
+          <div class="blog-thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2v20M2 12h20"/></svg></div>
+          <span class="blog-tag">Tips</span>
+          <h3 style="font-size:16px;">Energy Saving Tips</h3>
+          <p style="font-size:13.5px;">Simple habits and upgrades that lower your monthly power costs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ FAQS ============ -->
+<section class="page" id="page-faqs">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap" style="max-width:820px;">
+      <div class="section-head">
+        <span class="eyebrow">FAQs</span>
+        <h2>Common questions, answered.</h2>
+      </div>
+      <div id="faqList">
+        <div class="faq-item open">
+          <div class="faq-q">How long does solar installation take?<span class="plus">+</span></div>
+          <div class="faq-a">Most residential systems are installed within 3–7 days depending on size and site readiness. Commercial and industrial systems are scoped individually.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you offer maintenance after installation?<span class="plus">+</span></div>
+          <div class="faq-a">Yes. Every installation comes with a maintenance plan option, plus a workmanship warranty and rapid-response support.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can solar power run my whole building?<span class="plus">+</span></div>
+          <div class="faq-a">In most cases, yes — we design hybrid systems that combine solar, battery storage and grid or generator backup based on your energy audit.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you serve locations outside Lagos?<span class="plus">+</span></div>
+          <div class="faq-a">Yes, we've delivered projects across multiple Nigerian states for residential, commercial and industrial clients.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I get a quote?<span class="plus">+</span></div>
+          <div class="faq-a">Use the "Get a Quote" button anywhere on the site, or contact us directly by phone, email or WhatsApp.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="page" id="page-contact">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Contact Us</span>
+        <h2>Let's talk about your energy needs.</h2>
+      </div>
+      <div class="split" style="align-items:flex-start;">
+        <div class="contact-info-card">
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2Z"/></svg><div><b>Phone</b><span>+234 800 000 0000 · +234 800 000 0001</span></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg><div><b>Email</b><span>info@voltarisenergy.com</span></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Office</b><span>Voltaris House, Victoria Island, Lagos, Nigeria</span></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.5 8.5 0 0 1-4-.9L3 21l1.1-5a8.4 8.4 0 0 1-.9-4A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/></svg><div><b>WhatsApp</b><span>Chat with us instantly — tap the button below</span></div></div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:10px;" onclick="window.open('https://wa.me/2348000000000','_blank')">Chat on WhatsApp</button>
+        </div>
+
+        <form onsubmit="return handleContactSubmit(event)">
+          <div class="form-grid">
+            <div class="field"><label for="cf-name">Full name</label><input id="cf-name" required placeholder="Your name"></div>
+            <div class="field"><label for="cf-phone">Phone number</label><input id="cf-phone" required placeholder="080..."></div>
+            <div class="field full"><label for="cf-email">Email address</label><input id="cf-email" type="email" required placeholder="you@example.com"></div>
+            <div class="field full"><label for="cf-service">Service interested in</label>
+              <select id="cf-service">
+                <option>Solar Installation</option>
+                <option>Electrical Installation</option>
+                <option>Maintenance &amp; Support</option>
+                <option>Energy Consultation</option>
+              </select>
+            </div>
+            <div class="field full"><label for="cf-msg">Message</label><textarea id="cf-msg" rows="5" placeholder="Tell us about your project..."></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit" style="margin-top:6px;">Send Message</button>
+          <p id="cf-success" style="display:none;color:var(--green);font-weight:600;margin-top:14px;font-size:14px;">Thanks — your message has been received. We'll be in touch shortly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="page" id="page-quote">
+  <section class="block" style="padding-top:56px;">
+    <div class="wrap" style="max-width:720px;">
+      <div class="section-head">
+        <span class="eyebrow">Get a Quote</span>
+        <h2>Tell us about your project.</h2>
+        <p>Fill this in and our engineering team will respond with a tailored quote within 24 hours.</p>
+      </div>
+      <form onsubmit="return handleQuoteSubmit(event)">
+        <div class="form-grid">
+          <div class="field"><label for="q-name">Full name</label><input id="q-name" required></div>
+          <div class="field"><label for="q-phone">Phone number</label><input id="q-phone" required></div>
+          <div class="field"><label for="q-type">Property type</label>
+            <select id="q-type"><option>Residential</option><option>Commercial</option><option>Industrial</option></select>
+          </div>
+          <div class="field"><label for="q-service">Service needed</label>
+            <select id="q-service"><option>Solar Energy Solution</option><option>Electrical Service</option><option>Energy Consultation</option><option>Not sure yet</option></select>
+          </div>
+          <div class="field full"><label for="q-location">Location (state)</label><input id="q-location" placeholder="e.g. Lagos"></div>
+          <div class="field full"><label for="q-details">Project details</label><textarea id="q-details" rows="5" placeholder="Estimated load, current power source, timeline..."></textarea></div>
+        </div>
+        <button class="btn btn-primary" type="submit">Request My Free Quote</button>
+        <p id="q-success" style="display:none;color:var(--green);font-weight:600;margin-top:14px;font-size:14px;">Thank you — your quote request has been received. Our team will reach out shortly.</p>
+      </form>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;">
+          <svg class="logo-mark" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="21" stroke="#F5B700" stroke-width="2.4"/><path d="M26 8 L15 27 H22 L20 40 L33 20 H26 L26 8Z" fill="#F5B700"/></svg>
+          <span class="logo-word">VOLTARIS <span>ENERGY</span></span>
+        </div>
+        <p style="max-width:320px;font-size:14px;">Empowering homes and businesses with intelligent, sustainable and reliable energy solutions across Nigeria.</p>
+        <div class="badge-row">
+          <span class="pill">Solar</span><span class="pill">Electrical</span><span class="pill">Energy Audits</span>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" onclick="goTo('about');return false;">About Us</a></li>
+          <li><a href="#" onclick="goTo('services');return false;">Services</a></li>
+          <li><a href="#" onclick="goTo('projects');return false;">Projects</a></li>
+          <li><a href="#" onclick="goTo('blog');return false;">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#" onclick="goTo('services');return false;">Solar Installation</a></li>
+          <li><a href="#" onclick="goTo('services');return false;">Electrical Installation</a></li>
+          <li><a href="#" onclick="goTo('services');return false;">Maintenance</a></li>
+          <li><a href="#" onclick="goTo('faqs');return false;">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+234 800 000 0000</li>
+          <li>info@voltarisenergy.com</li>
+          <li>Victoria Island, Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Voltaris Energy. All rights reserved.</span>
+      <span>Powering a Brighter Tomorrow.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="whatsapp-fab" onclick="window.open('https://wa.me/2348000000000','_blank')" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.5 8.5 0 0 1-4-.9L3 21l1.1-5a8.4 8.4 0 0 1-.9-4A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
